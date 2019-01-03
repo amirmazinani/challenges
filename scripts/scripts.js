@@ -7,8 +7,8 @@ app.controller('main', ['$scope', function ($scope) {
 app.config([
     '$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/home', {
-                templateUrl: '/index.php',
+            .when('/', {
+                templateUrl: '/challenges/index.php',
                 controller: 'main',
                 css: '/styles/styles.css'
             })

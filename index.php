@@ -14,11 +14,8 @@
 </head>
 <body class="-d-r -fnt-sahel">
 
+
 <div ng-view></div>
-
-
-
-
 
 
 <script src="https://code.angularjs.org/1.7.5/angular.min.js"></script>
