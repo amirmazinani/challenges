@@ -1,0 +1,21 @@
+.item .title{
+    top: 270px;
+}
+.item .image{
+    transform-origin: bottom center;
+    transform: scale(0.9);
+    z-index: 1;
+}
+.item .content{
+    height: 250px;
+    margin-top: -195px;
+}
+.item:hover .content p{
+    opacity: 1;
+}
+.item:hover .image{
+    transform: scale(1);
+}
+.item:hover .content{
+    margin-top: -100px;
+}
