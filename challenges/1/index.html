@@ -1,30 +1,40 @@
-<section class="-b-c-pink-1 -h-100vh -py-20 -bx-s-b">
-    <main>
-        <div class="-dis-f -jus-c-c">
-
-            <div class="item -pos-r">
-                <div>
-                    <p class="title -fnt-lalezar -pos-a -left-50">سایت شخصی</p>
-                    <div class="image -transition">
-                        <img class="-brd-r-10 -bxsh-3" src="/uploads/images/img.jpg" alt="image" height="250px">
-                    </div>
-                    <div class="content -transition -h-100p -p-20 -fnt-s-smaller -c-gray-5 -bx-s-b -b-c-white -bxsh-3 -brd-r-10 -dis-f -f-w-w -al-it-e">
-                        <div class="-w-11">
-                            <p class="-opa-0 -transition -pb-10 -bx-s-b">
-                                <span class="-c-gray-6 -pl-10">عنوان: </span>
-                                <span>طراحی سایت شخصی</span>
-                            </p>
-                            <p class="-opa-0 -transition -pb-10 -bx-s-b">
-                                <span class="-c-gray-6 -pl-10">طراح: </span>
-                                <span>امیرحسین مزینانی</span>
-                            </p>
-                            <p class="-opa-0 -transition -pb-10 -bx-s-b">
-                                <span class="-c-gray-6 -pl-10">تاریخ: </span>
-                                <span>23 شهریور</span>
-                            </p>
+<section id="ch1" class="-h-100vh -py-20 -bx-s-b">
+    <main class="-mx-w-800 -h-100p -dis-f -al-it-c -f-w-w">
+        <div class="-w-11 -dis-f -f-d-c -al-it-c -jus-c-sb -brd-r-10 -b-c-blue-2 container">
+            <div class="-pt-20 -t-al-c">
+                <h1 class="-fnt-lalezar -pb-10 -fnt-s-h5 -c-white">نمونه کارهای امیر</h1>
+                <p class="-c-white -opa-6">خلاصه ای از بهترین نمونه کارها</p>
+            </div>
+            <div class="items -pos-r">
+                <div ng-repeat="i in [1,2,3]" class="item item{{i}} -p-10 -top-0 -bx-s-b -pos-a" style="right:{{(i-1)*350+'px'}}">
+                    <div>
+                        <p class="title -fnt-lalezar -pos-a -left-50">سایت شخصی</p>
+                        <div class="image -transition">
+                            <img class="-brd-r-10 -bxsh-3" src="/uploads/images/img.jpg" alt="image" height="250px">
+                        </div>
+                        <div class="content -transition -h-100p -p-20 -fnt-s-smaller -c-gray-5 -bx-s-b -b-c-white -bxsh-3 -brd-r-10 -dis-f -f-w-w -al-it-e">
+                            <div class="-w-11">
+                                <p class="-opa-0 -transition -pb-10 -bx-s-b">
+                                    <span class="-c-gray-6 -pl-10">عنوان: </span>
+                                    <span>طراحی سایت شخصی</span>
+                                </p>
+                                <p class="-opa-0 -transition -pb-10 -bx-s-b">
+                                    <span class="-c-gray-6 -pl-10">طراح: </span>
+                                    <span>امیرحسین مزینانی</span>
+                                </p>
+                                <p class="-opa-0 -transition -pb-10 -bx-s-b">
+                                    <span class="-c-gray-6 -pl-10">تاریخ: </span>
+                                    <span>23 شهریور</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="nav -pb-20">
+                <span class="-dis-ib -brd-r-5 -b-c-white -opa-4"></span>
+                <span class="-dis-ib -brd-r-5 -b-c-white"></span>
+                <span class="-dis-ib -brd-r-5 -b-c-white -opa-4"></span>
             </div>
 
         </div>
