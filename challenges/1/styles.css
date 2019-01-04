@@ -6,7 +6,7 @@
 }
 #ch1 .items{
     flex-shrink: 0;
-    width: 131%;
+    width: 130%;
     height: 390px;
 }
 #ch1 .item{
@@ -38,4 +38,7 @@
 #ch1 .nav > span{
     width: 50px;
     height: 3px;
+}
+#ch1 .nav:hover > span{
+    height: 5px;
 }
