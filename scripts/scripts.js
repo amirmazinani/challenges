@@ -8,13 +8,13 @@ app.config([
     '$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: '/challenges/index.php',
+                templateUrl: '/challenges/index.html',
                 controller: 'main',
                 css: '/styles/styles.css'
             })
             .when('/challenges/1', {
                 controller: '',
-                templateUrl: '/challenges/1/index.php',
+                templateUrl: '/challenges/1/index.html',
                 css: ['/challenges/1/styles.css']
             })
             .otherwise({
