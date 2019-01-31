@@ -1,0 +1,33 @@
+.nav{
+    width: 340px;
+}
+.item{
+    height: 40px;
+    width: 0%;
+    min-width: 28px;
+    transition:width .3s linear;
+}
+.item .txt {
+    transform-origin: right center;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--teal-3);
+}
+
+.item .txt > p {
+    transform: translateY(15px);
+    opacity: 0;
+    transition: all .8s;
+}
+.item.active{
+    width: 100% !important;
+}
+.item.active .txt {
+    transform: scaleX(1);
+}
+
+.item.active .txt > p {
+    opacity: 1;
+    transform: translateY(0);
+}
