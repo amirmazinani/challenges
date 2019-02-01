@@ -12,7 +12,7 @@
     transform: scaleX(0);
     transition: transform 0.4s;
     padding-bottom: 3px;
-    border-bottom: 3px solid var(--teal-3);
+    border-bottom: 3px solid var(--twitter);
 }
 
 .item .txt > p {
