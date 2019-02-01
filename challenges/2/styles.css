@@ -1,5 +1,22 @@
+body{
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+}
 .nav{
     width: 340px;
+    border-radius: 10px 10px 35px 35px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+}
+.nav:after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 35%;
+    background: var(--gray-2);
+    border-radius: 10px;
 }
 .item{
     height: 40px;
