@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+}
+#ch3 .-transition{
+    transition: all 0.5s;
+}
+#ch3 .nav{
+    width: 340px;
+    border-radius: 10px 10px 35px 35px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+}
+#ch3 .nav:after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 35%;
+    background: var(--gray-2);
+    border-radius: 10px;
+}
+#ch3 .item > div{
+    border-radius: 50px;
+    height: 30px;
+    line-height: 30px;
+}
+#ch3 .item{
+    width: 0;
+    min-width: 55px;
+    transition:width .3s;
+}
+#ch3 .item.active{
+    width: 100%;
+}
+
+
+
+#ch3 .item .txt{
+    transform-origin: right center;
+    transform: scaleX(0);
+}
+#ch3 .item.active .txt{
+    transform: scaleX(1);
+}
+#ch3 .item.active.purple > div{
+    color: #6200EA;
+    background-color: #EDE7F6;
+}
+#ch3 .item.active.red > div{
+    color: #C51162;
+    background-color: #FCE4EC;
+    
+}
+#ch3 .item.active.yellow > div{
+    color: #FFD600;
+    background-color: #FFF9C4;
+}
+#ch3 .item.active.blue > div{
+    color: #00B8D4;
+    background-color: #E0F7FA;
+}

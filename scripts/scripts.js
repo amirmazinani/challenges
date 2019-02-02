@@ -22,6 +22,11 @@ app.config([
                 templateUrl: '/challenges/2/index.html',
                 css: ['/challenges/2/styles.css']
             })
+            .when('/challenges/3', {
+                controller: '',
+                templateUrl: '/challenges/3/index.html',
+                css: ['/challenges/3/styles.css?1']
+            })
             .otherwise({
                 redirectTo: '/'
             });
