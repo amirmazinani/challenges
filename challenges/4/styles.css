@@ -1,0 +1,68 @@
+body{
+    /*background: linear-gradient(to left, #0072ff, #00c6ff);*/
+    background: var(--gray-2);
+    direction: ltr;
+}
+body *:not(i){
+    font-family: 'Quicksand', sans-serif;
+}
+#ch4 > main > div{
+    height: 600px;
+    padding: 30px;
+}
+#ch4 > main > div > div{
+    border: 15px solid var(--gray-1);
+}
+#ch4 .prt1{
+    padding:40px 50px;
+}
+#ch4 .prt2 .soon{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+#ch4 .prt2 .soon::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 50px;
+    color: var(--black);
+    white-space: nowrap;
+    text-align: left;
+    direction: ltr;
+    overflow: hidden;
+    width: var(--width);
+}
+#ch4 .prt2 .percent{
+    width: 36px;
+    text-align: center;
+    bottom: calc(100% + 5px);
+    left: calc(var(--left) - 18px);
+ }
+#ch4 .prt2 .text{
+    letter-spacing: 2.5px;
+}
+#ch4 .prt3 .time{
+    min-width: 100px;
+    margin: 0 15px;
+}
+#ch4 .prt3 .time > div {
+    transform: translateX(-8px);
+}
+#ch4 .prt3 .time .number{
+    font-size: 50px;
+}
+#ch4 .prt3 .time .text{
+    writing-mode: sideways-lr;
+    left: calc(100% + 3px);
+    bottom: 5px;
+}
+#ch4 .prt4 button{
+    height: 40px;
+    letter-spacing: 3px;
+}
+#ch4 .prt4 input{
+    height: 40px;
+    width: 250px;
+}
