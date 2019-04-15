@@ -3,7 +3,7 @@ app.directive('timer', ['$interval', function ($interval) {
         restrict: 'A',
         scope: false,
         link: function (scope, element, attr) {
-            const finish = new Date(2019, 5, 4 ,12,0,0).getTime();
+            const finish = new Date(2019, 4, 27 ,10,0,0).getTime();
             const finish_secs = Math.floor(finish) - 2592000234;
             const start = Math.floor(new Date(2019, 3, 25 ,0,0,0).getTime()) - 2592000234;
             let timer = $interval(function() {
