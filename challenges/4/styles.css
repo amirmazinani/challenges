@@ -1,5 +1,4 @@
 body{
-    /*background: linear-gradient(to left, #0072ff, #00c6ff);*/
     background: var(--gray-2);
     direction: ltr;
 }
@@ -54,6 +53,7 @@ body *:not(i){
     font-size: 50px;
 }
 #ch4 .prt3 .time .text{
+    -webkit-writing-mode: vertical-lr;
     writing-mode: sideways-lr;
     left: calc(100% + 3px);
     bottom: 5px;
@@ -65,4 +65,36 @@ body *:not(i){
 #ch4 .prt4 input{
     height: 40px;
     width: 250px;
+}
+@media all and (max-width: 650px) {
+    #ch4 .prt2 .soon{
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    #ch4 .prt2 .soon::after{
+        font-size: 30px;
+    }
+    #ch4 .prt3 .time{
+        min-width: 100px;
+        margin: 0;
+    }
+    #ch4 .prt3 .time .number {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 490px) {
+    #ch4 .prt2 .soon{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+    #ch4 .prt2 .soon::after{
+        font-size: 20px;
+    }
+    #ch4 .prt3 .time{
+        min-width: 70px;
+        margin: 0;
+    }
+    #ch4 .prt3 .time .number {
+        font-size: 30px;
+    }
 }

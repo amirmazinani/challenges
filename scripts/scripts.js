@@ -30,7 +30,7 @@ app.config([
             .when('/challenges/4', {
                 controller: '',
                 templateUrl: '/challenges/4/index.html',
-                css: ['/challenges/4/styles.css?2']
+                css: ['/challenges/4/styles.css?3']
             })
             .otherwise({
                 redirectTo: '/'
