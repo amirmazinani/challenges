@@ -1,3 +1,20 @@
 body{
     background: var(--gray-2);
 }
+#ch5 .container{
+    max-width: 600px;
+    max-height: 400px;
+}
+#ch5 .tooltip{
+    width: 200px;
+    height: 120px;
+}
+#ch5 .fake{
+    height: 20px;
+    background: var(--gray-1);
+}
+#ch5 .btn{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}
