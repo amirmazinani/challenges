@@ -117,6 +117,13 @@ app.directive('autoTooltip', ['$interval', '$timeout', function ($interval, $tim
                     }
                 }
 
+                function closeAll(){
+                    let all_dropdown = container.querySelectorAll('.dropdown_container .dropdown');
+                    all_dropdown.forEach((dropdown) => {
+                        angular.element(dropdown).css({'display':'none'});
+                    });
+                }
+
                 angular.element(button).on('click', function () {
                     if (angular.element(dropdown).css('display') === 'block') {
                         angular.element(dropdown).css({'display': 'none'});
@@ -124,6 +131,7 @@ app.directive('autoTooltip', ['$interval', '$timeout', function ($interval, $tim
                         let button_distances = setButtonDistance();
                         let state = setState(dropdown, button_distances);
                         setStyle(dropdown, state);
+                        closeAll();
                         $timeout(function () {angular.element(dropdown).css({'display': 'block'})},10);
                     }
                 })
